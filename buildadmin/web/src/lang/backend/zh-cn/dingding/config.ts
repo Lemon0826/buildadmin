@@ -1,0 +1,17 @@
+export default {
+    id: 'ID',
+    name: '配置名称',
+    webhook: 'WebHook',
+    security: '安全设置',
+    'security sign': '加签',
+    'security ip': '指定IP',
+    'security none': '无需',
+    security_value: '安全设置值',
+    default_switch: '默认项',
+    status: '状态',
+    'status 0': '禁用',
+    'status 1': '启用',
+    createtime: '创建时间',
+    updatetime: '更新时间',
+    'quick Search Fields': 'ID/配置名称',
+}
