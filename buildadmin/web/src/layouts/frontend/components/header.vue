@@ -1,10 +1,10 @@
 <template>
     <el-header class="header">
         <el-row justify="center">
-            <el-col class="header-row" :span="16" :xs="24">
+            <el-col class="header-row" :span="24" :xs="24">
                 <div :class="userInfo.isLogin() ? 'hidden-sm-and-down' : ''" @click="router.push({ name: '/' })" class="header-logo">
-                    <img src="~assets/logo.png" />
-                    <span class="hidden-xs-only">{{ siteConfig.siteName }}</span>
+                    <img src="~assets/haomologo.png" />
+                    <!--<span class="hidden-xs-only">{{ siteConfig.siteName }}</span>-->
                 </div>
                 <div v-if="userInfo.isLogin()" @click="memberCenter.toggleMenuExpand(true)" class="user-menus-expand hidden-md-and-up">
                     <Icon name="fa fa-indent" color="var(--el-color-primary)" size="20" />
@@ -100,28 +100,35 @@ index()
 <style scoped lang="scss">
 .header {
     background-color: var(--ba-bg-color-overlay);
-    box-shadow: 0 0 8px rgba(0 0 0 / 8%);
+    //background-color: #2e2ec9;
+    //box-shadow: 0 0 8px rgba(12, 4, 4, 1);
 }
 .el-header {
     padding: 0;
+    background-color: #2e2ec9;
 }
 .header-row {
     display: flex;
+    background-color: #2e2ec9;
+    height: 57px;
+    //width: 100vw;
 }
 .user-menus-expand {
     display: flex;
     height: 60px;
     align-items: center;
     justify-content: center;
+    //background-color: #2e2ec9;
 }
 .header-logo {
     display: flex;
     height: 60px;
+    margin-left: 1%;
     align-items: center;
     cursor: pointer;
     img {
-        height: 34px;
-        width: 34px;
+        height: 40px;
+        width: 170px;
     }
     span {
         padding-left: 4px;
@@ -131,6 +138,7 @@ index()
 .switch-language {
     display: flex;
     align-items: center;
+    //background-color: #2e2ec9;
     span {
         padding-right: 4px;
     }
@@ -138,11 +146,17 @@ index()
 .el-menu--horizontal {
     margin-left: auto;
     border-bottom: none;
+    height: 60px;
+
+    //background-color: #2e2ec9;
+    
 }
 .header-user-box {
     display: flex;
     align-items: center;
     justify-content: center;
+    //background-color: #2e2ec9;
+    
 }
 .header-user-avatar {
     width: 16px;

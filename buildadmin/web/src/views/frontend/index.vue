@@ -3,8 +3,10 @@
         <Header />
         <el-container class="container">
             <el-main class="main">
+                
                 <div class="main-container">
-                    <div class="main-left">
+                    
+                    <!--<div class="main-left">
                         <div class="main-title">{{ siteConfig.siteName }}</div>
                         <div class="main-content">
                             {{ $t('index.Steve Jobs') }}
@@ -21,7 +23,7 @@
                     </div>
                     <div class="main-right">
                         <img :src="indexCover" alt="" />
-                    </div>
+                    </div>-->
                 </div>
             </el-main>
         </el-container>
@@ -48,10 +50,15 @@ togglePageDark(false)
     margin: 0 15px 15px 0;
 }
 .container {
+ 
     width: 100vw;
-    height: 100vh;
-    background: url(/@/assets/bg.jpg) repeat;
+    height: 95vh;
+    
+    background: url(/@/assets/background.png) repeat;
     color: var(--el-color-white);
+    background-size: 100%;
+    -webkit-background-size: 100%;
+    
     .main {
         height: calc(100vh - 120px);
         padding: 0;

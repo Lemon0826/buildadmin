@@ -24,7 +24,7 @@ import { mainHeight as layoutMainScrollbarStyle } from '/@/utils/layout'
     padding-top: 15px;
     align-items: flex-start;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .user-layouts {
         padding-top: 0;
     }

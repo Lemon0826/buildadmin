@@ -3,7 +3,7 @@
         <Header />
         <el-scrollbar :style="layoutMainScrollbarStyle()" ref="mainScrollbarRef">
             <el-row class="frontend-footer-brother" justify="center">
-                <el-col class="user-layouts" :span="16" :xs="24">
+                <el-col class="user-layouts" :span="24" :xs="24">
                     <Aside class="hidden-sm-and-down" />
                     <Main />
                 </el-col>
@@ -24,10 +24,12 @@ import { mainHeight as layoutMainScrollbarStyle } from '/@/utils/layout'
 <style scoped lang="scss">
 .user-layouts {
     display: flex;
+    width: 900px;
     padding-top: 15px;
+    //padding-left: 15px;
     align-items: flex-start;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .user-layouts {
         padding-top: 0;
     }

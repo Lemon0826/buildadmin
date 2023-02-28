@@ -3,7 +3,7 @@
         <el-card class="user-views-card" shadow="hover">
             <template #header>
                 <div class="card-header">
-                    <span>{{ $t('user.account.overview.Account information') }}</span>
+                    <span>{{ $t('user.account.overview.My homepage') }}</span>
                     <el-button @click="router.push({ name: 'account/profile' })" type="info" v-blur plain>
                         {{ $t('user.account.overview.personal data') }}
                     </el-button>

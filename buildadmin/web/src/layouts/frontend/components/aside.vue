@@ -74,6 +74,7 @@ const routerPush = (routeName = '', route?: RouteRecordRaw) => {
 <style scoped lang="scss">
 .ba-user-layouts {
     width: 240px;
+    margin-left: 1%;
     background-color: var(--ba-bg-color-overlay);
     box-shadow: var(--el-box-shadow-light);
 }

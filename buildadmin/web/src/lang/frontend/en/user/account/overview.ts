@@ -1,5 +1,5 @@
 export default {
-    'Account information': 'Account information',
+    'My homepage': 'My homepage',
     'personal data': 'personal data',
     'Filled in': 'Filled in',
     'Not filled in': 'Not filled in',
